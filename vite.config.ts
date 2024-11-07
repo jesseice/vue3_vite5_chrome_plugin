@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [
     vue(),
     webExtension({
-      manifest: 'manifest.json'
+      manifest: 'manifest.json',
+      skipManifestValidation: true,
+      disableAutoLaunch: true,
     }),
   ],
 });
